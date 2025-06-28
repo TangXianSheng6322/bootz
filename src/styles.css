@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Funnel+Display:wght@300..800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-mainIndigo: #251993;
+  --color-mainLime: #dcff5f;
+  --font-pixel: 'Bitcount Grid Double', system-ui;
+  --font-main: 'Funnel Display', sans-serif;
+}
+
+@utility pic {
+  @apply aspect-square rounded-3xl;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    @apply font-main cursor-pointer rounded-2xl border-2 px-5 py-1 text-sm/7 font-extralight md:text-base/7 lg:text-lg/7;
+  }
+
+  body {
+    @apply bg-mainIndigo;
+  }
+
+  h1 {
+    @apply font-main text-mainIndigo text-center text-7xl font-black uppercase md:text-8xl lg:text-9xl;
+  }
+  h2 {
+    @apply font-main text-mainIndigo text-5xl font-bold md:text-6xl lg:text-7xl;
+  }
+  h3 {
+    @apply font-main text-mainIndigo text-2xl font-bold md:text-3xl lg:text-4xl;
+  }
+  p {
+    @apply font-main text-mainIndigo text-sm/7 font-light md:text-base/7 lg:text-lg/7;
+  }
+  a {
+    @apply font-main text-lg/7 font-light text-neutral-100 md:text-xl/7 lg:text-2xl/7;
+  }
+}

@@ -1,0 +1,77 @@
+<section class="hero h-screen w-full">
+  <nav
+    class="nav mt-5 flex h-1/12 w-full items-center justify-between md:mt-0 md:h-2/12"
+  >
+    <div
+      class="logo flex h-full w-full items-center justify-between md:w-3/12 md:justify-start"
+    >
+      <img
+        src="logo.jpg"
+        alt="boozt logo"
+        class="ml-5 h-10/12 md:ml-15 md:h-6/12 lg:ml-20"
+      />
+      <button class="block h-full border-0 md:hidden" (click)="toggleMenu()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-12 w-12 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#dcff5f"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="links hidden h-full w-6/12 items-center justify-around md:flex">
+      <a href="">About</a>
+      <a href="">Services</a>
+      <a href="">Portfolio</a>
+      <a href="">Testimonial</a>
+    </div>
+    <div
+      class="button hidden h-full w-3/12 items-center justify-center md:flex"
+    >
+      <button
+        class="h-3/12 border-0 bg-neutral-100 text-lg/7 md:text-xl/7 lg:text-2xl/7"
+      >
+        Contact Us
+      </button>
+    </div>
+  </nav>
+  <div
+    *ngIf="isMenuOpen"
+    class="bg-mainIndigo bg-opacity-90 fixed inset-0 z-40 flex h-full w-full flex-col items-center justify-center gap-10 text-5xl md:hidden"
+  >
+    <a href="" (click)="closeMenu()" class="text-5xl">About</a>
+    <a href="" (click)="closeMenu()" class="text-5xl">Services</a>
+    <a href="" (click)="closeMenu()" class="text-5xl">Portfolio</a>
+    <a href="" (click)="closeMenu()" class="text-5xl">Testimonial</a>
+    <button
+      (click)="closeMenu()"
+      class="h-1/12 border-0 bg-neutral-100 text-5xl"
+    >
+      Contact Us
+    </button>
+    <button (click)="closeMenu()" class="border-0">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-20 w-20 cursor-pointer text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="#dcff5f"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </div>
+</section>
