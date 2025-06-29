@@ -1,4 +1,4 @@
-<section class="hero h-screen w-full">
+<section class="hero relative h-screen w-full overflow-hidden">
   <nav
     class="nav mt-5 flex h-1/12 w-full items-center justify-between md:mt-0 md:h-2/12"
   >
@@ -45,7 +45,7 @@
   </nav>
   <div
     *ngIf="isMenuOpen"
-    class="bg-mainIndigo bg-opacity-90 fixed inset-0 z-40 flex h-full w-full flex-col items-center justify-center gap-10 text-5xl md:hidden"
+    class="bg-mainIndigo bg-opacity-90 fixed inset-0 z-40 flex h-full w-screen flex-col items-center justify-center gap-10 text-5xl transition-all duration-300 md:hidden"
   >
     <a href="" (click)="closeMenu()" class="text-5xl">About</a>
     <a href="" (click)="closeMenu()" class="text-5xl">Services</a>
@@ -73,5 +73,62 @@
         />
       </svg>
     </button>
+  </div>
+  <h1
+    class="text-mainLime mt-10 text-[100px] sm:text-[140px] md:mt-0 md:text-[190px] lg:text-[230px]"
+  >
+    Boost <br />
+    Now
+  </h1>
+  <div
+    class="circle pointer-events-none absolute bottom-[-30vh] left-1/2 z-0 h-[60vh] w-[60vh] -translate-x-1/2 transform rounded-full bg-neutral-100/30 ring-[70px] ring-neutral-100/10"
+  ></div>
+
+  <div
+    class="left hidden w-4/12 flex-col items-start justify-around space-y-10 md:flex md:px-10 md:py-5 lg:px-20 lg:py-10"
+  >
+    <p class="w-full text-neutral-100 md:w-7/12">
+      Welcome to Boozt, your ultimate hub for electrifying social media
+      advertising that packs a punch!
+    </p>
+    <button class="bg-mainLime text-mainIndigo md:h-15 md:w-40 md:text-2xl">
+      Start Now
+    </button>
+  </div>
+  <div class="absolute bottom-5 left-1/2 -translate-x-1/2 md:hidden">
+    <button
+      class="bg-mainLime text-mainIndigo aspect-square w-40 rounded-full text-2xl"
+    >
+      Start Now
+    </button>
+  </div>
+
+  <div
+    class="right absolute left-1/2 z-0 mt-10 mr-15 flex -translate-x-1/2 gap-6 md:right-0 md:bottom-0 md:-left-0 md:mt-0 md:mr-10 md:h-6/12 md:-translate-x-0 md:flex-col"
+  >
+    <div class="flex flex-col items-end gap-1">
+      <span class="text-3xl font-medium text-neutral-100 md:text-6xl"
+        ><i class="text-mainLime not-italic">+</i>800</span
+      >
+      <span class="text-right text-lg font-light text-neutral-100 md:text-2xl"
+        >Happy <br />Clients</span
+      >
+    </div>
+    <div class="flex flex-col items-end gap-1">
+      <span class="text-3xl font-medium text-neutral-100 md:text-6xl"
+        ><i class="text-mainLime not-italic">+</i>10k</span
+      >
+      <span class="text-right text-lg font-light text-neutral-100 md:text-2xl"
+        >Campaign <br />Launch</span
+      >
+    </div>
+    <div class="flex flex-col items-end gap-1">
+      <span class="text-3xl font-medium text-neutral-100 md:text-6xl"
+        ><i class="text-mainLime not-italic">+</i>200</span
+      >
+      <span class="text-right text-lg font-light text-neutral-100 md:text-2xl"
+        >Media <br />Featured</span
+      >
+    </div>
   </div>
 </section>
