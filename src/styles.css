@@ -6,6 +6,7 @@
   --color-mainLime: #dcff5f;
   --font-pixel: 'Bitcount Grid Double', system-ui;
   --font-main: 'Funnel Display', sans-serif;
+  --breakpoint-xs: 22rem;
 }
 
 @utility pic {
