@@ -28,7 +28,7 @@
   }
 
   h1 {
-    @apply font-main text-mainIndigo text-center text-7xl font-black uppercase md:text-8xl lg:text-9xl;
+    @apply font-main text-mainIndigo text-center text-7xl font-black md:text-8xl lg:text-9xl;
   }
   h2 {
     @apply font-main text-mainIndigo text-5xl font-extrabold md:text-6xl lg:text-7xl;

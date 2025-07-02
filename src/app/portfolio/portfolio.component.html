@@ -1,44 +1,70 @@
-<section class="h-[100vh] px-[5vw] py-[5vh]">
-  <div class="container flex flex-col items-center justify-around">
-    <div class="text flex w-10/12 flex-col gap-[3vh]">
-      <div class="left">
-        <h1 class="text-mainLime text-left text-5xl">Boozt <br />Portfolio</h1>
-      </div>
-      <div class="middle flex items-end justify-between">
-        <p class="text-mainLime font">Why?</p>
-        <button class="text-mainLime">Discover More</button>
-      </div>
-      <div class="right">
-        <p class="text-mainLime hidden">Why?</p>
-        <p class="text-mainLime">
-          Check out some of our star-studded campaigns and success stories.
-          Warning: may cause serious FOMO
-        </p>
-      </div>
-    </div>
+<section
+  class="xs:my-[10vh] relative flex h-[100vh] items-center justify-center px-[5vw] py-[5vh] sm:my-[5vh] xl:items-start xl:px-0"
+>
+  <div class="container flex justify-center">
     <div
-      class="photos relative mt-[10vw] flex min-w-full flex-col items-center justify-between gap-[5vh] overflow-hidden"
+      class="container flex flex-col items-center justify-around xl:justify-between"
     >
-      <div class="flex min-w-full justify-start">
-        <img
-          src="pic7.png"
-          alt="photo of a man"
-          class="aspect-square h-[30vh] rounded-2xl"
-        />
+      <div
+        class="text flex w-10/12 flex-col gap-[3vh] xl:w-full xl:flex-row xl:justify-between"
+      >
+        <div class="left">
+          <h1
+            class="text-mainLime text-left text-5xl md:text-7xl lg:text-8xl xl:text-9xl"
+          >
+            Boozt <br />Portfolio
+          </h1>
+        </div>
+        <div class="middle flex items-end justify-between">
+          <p
+            class="text-mainLime md:text-xl md:font-medium lg:text-2xl xl:hidden"
+          >
+            Why?
+          </p>
+          <button
+            class="text-mainLime md:text-xl md:font-medium lg:text-2xl xl:text-3xl xl:font-normal"
+          >
+            Discover More
+          </button>
+        </div>
+        <div class="right xl:flex xl:w-3/12 xl:flex-col xl:justify-between">
+          <p class="text-mainLime hidden text-right text-4xl xl:block">Why?</p>
+          <p
+            class="text-mainLime xl md:text-xl md:font-medium lg:text-2xl xl:text-right xl:font-light"
+          >
+            Check out some of our star-studded campaigns and success stories.
+            Warning: may cause serious FOMO
+          </p>
+        </div>
       </div>
-      <div class="hidden">
-        <img
-          src="pic8.png"
-          alt="screenshot of socia media platform"
-          class="h-[40vh] object-contain"
-        />
-      </div>
-      <div class="flex min-w-full justify-end">
-        <img
-          src="pic9.png"
-          alt="photo of a man"
-          class="aspect-square h-[30vh] rounded-2xl"
-        />
+      <div
+        class="photos relative mt-[10vw] flex min-w-full flex-col items-center justify-between gap-[5vh] overflow-hidden md:grid md:grid-cols-2 md:grid-rows-2 xl:absolute xl:bottom-0 xl:mt-0 xl:flex xl:translate-y-1/2 xl:flex-row"
+      >
+        <div
+          class="flex min-w-full justify-start md:min-w-0 md:justify-center xl:w-[35vw] xl:p-5"
+        >
+          <img
+            src="pic7.png"
+            alt="photo of a man"
+            class="xs:rounded-2xl aspect-square h-[30vh] sm:rounded-3xl lg:rounded-4xl xl:h-fit"
+          />
+        </div>
+        <div class="hidden md:row-span-2 md:block xl:p-5">
+          <img
+            src="pic8.png"
+            alt="screenshot of socia media platform"
+            class="rounded-3xl object-contain md:h-auto lg:rounded-4xl xl:w-[33vw] xl:shadow-lg"
+          />
+        </div>
+        <div
+          class="flex min-w-full justify-end md:min-w-0 md:justify-center xl:w-[35vw] xl:p-5"
+        >
+          <img
+            src="pic9.png"
+            alt="photo of a man"
+            class="xs:rounded-2xl aspect-square h-[30vh] sm:rounded-3xl lg:rounded-4xl xl:h-fit"
+          />
+        </div>
       </div>
     </div>
   </div>
