@@ -7,6 +7,7 @@
   --font-pixel: 'Bitcount Grid Double', system-ui;
   --font-main: 'Funnel Display', sans-serif;
   --breakpoint-xs: 22rem;
+  --breakpoint-pro: 26rem;
 }
 
 @utility pic {
