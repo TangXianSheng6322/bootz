@@ -6,6 +6,7 @@ import { BooztServicesComponent } from './boozt-services/boozt-services.componen
 import { BooztServices2Component } from './boozt-services2/boozt-services2.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { FinalComponent } from './final/final.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { PricingComponent } from './pricing/pricing.component';
     BooztServices2Component,
     PortfolioComponent,
     PricingComponent,
+    FinalComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

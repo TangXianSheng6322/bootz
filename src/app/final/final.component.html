@@ -1,6 +1,8 @@
-<section class="hero relative h-screen w-full overflow-hidden">
+<section
+  class="final xs:items-start relative z-0 flex h-screen w-full items-center justify-center overflow-hidden"
+>
   <nav
-    class="nav mt-5 flex h-1/12 w-full items-center justify-between md:mt-0 md:h-2/12"
+    class="nav absolute top-0 mt-5 flex h-1/12 w-full items-center justify-between md:hidden"
   >
     <div
       class="logo flex h-full w-full items-center justify-between md:w-3/12 md:justify-start"
@@ -74,64 +76,59 @@
       </svg>
     </button>
   </div>
-  <h1
-    class="text-mainLime mt-10 text-[100px] uppercase sm:text-[140px] md:mt-0 md:text-[190px] lg:text-[230px]"
-  >
-    Boost <br />
-    Now
-  </h1>
+  <div class="xs:mt-[20vh] container xl:mt-[5vh]">
+    <h1
+      class="text-mainLime xs:text-[60px] pro:text-[72px] z-20 mt-10 uppercase sm:text-[140px] md:mt-0 md:text-[130px] lg:text-[160px] xl:text-[250px]"
+    >
+      Start <br />
+      Campaign <br />
+      Now
+    </h1>
+  </div>
+
   <div
-    class="circle pointer-events-none absolute bottom-[-30vh] left-1/2 z-0 h-[60vh] w-[60vh] -translate-x-1/2 transform rounded-full bg-neutral-100/30 ring-[70px] ring-neutral-100/10"
+    class="circle pointer-events-none absolute bottom-[-30vh] left-1/2 z-[-10] h-[60vh] w-[60vh] -translate-x-1/2 transform rounded-full bg-neutral-100/30 ring-[70px] ring-neutral-100/10"
     aria-hidden="true"
   ></div>
 
-  <div
-    class="left hidden w-4/12 flex-col items-start justify-around space-y-10 md:flex md:gap-3 md:px-10 md:py-5 lg:px-20 lg:py-10"
+  <nav
+    class="nav absolute bottom-0 mt-5 hidden h-1/12 w-full items-center justify-between md:mt-0 md:flex md:h-2/12 md:gap-[1vw] md:px-[2vw]"
   >
-    <p class="w-full text-neutral-100 md:w-8/12">
-      Welcome to Boozt, your ultimate hub for electrifying social media
-      advertising that packs a punch!
-    </p>
-    <button
-      class="bg-mainLime text-mainIndigo z-10 md:h-15 md:w-40 md:text-2xl"
+    <div
+      class="logo flex h-full w-full items-center justify-between md:w-2/12 md:justify-center"
     >
-      Start Now
-    </button>
-  </div>
-  <div class="absolute bottom-5 left-1/2 -translate-x-1/2 md:hidden">
-    <button
-      class="bg-mainLime text-mainIndigo aspect-square w-40 rounded-full text-2xl"
+      <img src="logo.png" alt="boozt logo" class="h-10/12 md:h-6/12" />
+      <button class="block h-full border-0 md:hidden" (click)="toggleMenu()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-12 w-12 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#dcff5f"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="links hidden h-full w-8/12 items-center justify-around md:flex">
+      <a href="">About</a>
+      <a href="">Services</a>
+      <a href="">Portfolio</a>
+      <a href="">Testimonial</a>
+    </div>
+    <div
+      class="button hidden h-full w-3/12 items-center justify-center md:flex"
     >
-      Start Now
-    </button>
-  </div>
-
-  <div
-    class="right absolute left-1/2 z-0 mt-10 mr-15 flex -translate-x-1/2 gap-6 md:right-0 md:bottom-0 md:-left-0 md:mt-0 md:mr-10 md:h-6/12 md:-translate-x-0 md:flex-col"
-  >
-    <div class="flex flex-col items-end gap-1">
-      <span class="text-3xl font-medium text-neutral-100 md:text-6xl"
-        ><i class="text-mainLime not-italic">+</i>800</span
+      <button
+        class="h-3/12 border-0 bg-neutral-100 text-lg/7 md:text-xl/7 lg:text-2xl/7"
       >
-      <span class="text-right text-lg font-light text-neutral-100 md:text-2xl"
-        >Happy <br />Clients</span
-      >
+        Contact Us
+      </button>
     </div>
-    <div class="flex flex-col items-end gap-1">
-      <span class="text-3xl font-medium text-neutral-100 md:text-6xl"
-        ><i class="text-mainLime not-italic">+</i>10k</span
-      >
-      <span class="text-right text-lg font-light text-neutral-100 md:text-2xl"
-        >Campaign <br />Launch</span
-      >
-    </div>
-    <div class="flex flex-col items-end gap-1">
-      <span class="text-3xl font-medium text-neutral-100 md:text-6xl"
-        ><i class="text-mainLime not-italic">+</i>200</span
-      >
-      <span class="text-right text-lg font-light text-neutral-100 md:text-2xl"
-        >Media <br />Featured</span
-      >
-    </div>
-  </div>
+  </nav>
 </section>
